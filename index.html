@@ -27,6 +27,12 @@
     position: absolute;
   }
 
+  @media screen and (max-width: 800px){
+    section[name="top"] > #badge {
+      display: none;
+    }
+  }
+
   section[name="top"] > .left{
     width: 40%;
     height: 100vh;
@@ -34,6 +40,27 @@
     position: relative;
     box-sizing: border-box;
     background-color:#FD6975;
+  }
+
+  #mobileImage {
+    display: none;
+    width:100%;
+  }
+
+  @media screen and (max-width: 800px){
+    section[name="top"]{
+      height: auto;
+    }
+    section[name="top"] > .left{
+      width: 100%;
+      padding-bottom:100px;
+      display: inline-block;
+      height: auto;
+    }
+
+    #mobileImage {
+      display: inline-block;
+    }
   }
 
   section[name="top"] > .left > #logo{
@@ -50,6 +77,13 @@
     width:90%;
   }
 
+  @media screen and (max-width: 1150px){
+    section[name="top"] > .left > h1{
+      font-size:20px;
+      line-height: 32px;
+    }
+  }
+
   section[name="top"] > .left > h1 > i {
     font-weight: 400;
 
@@ -61,6 +95,19 @@
         margin-left: -20px;
         height: 80px;
         margin-right: -20px;
+  }
+
+  section[name="top"] > .left > h1 > img.microsoft {
+    margin-bottom:-28px;margin-left:-12px;
+  }
+
+  @media screen and (max-width: 1150px){
+    section[name="top"] > .left > h1 > img {
+    margin-bottom: -30px;
+    }
+    section[name="top"] > .left > h1 > img.microsoft {
+      margin-bottom: -34px;
+    }
   }
 
   section[name="top"] > .left > h2{
@@ -84,11 +131,21 @@
     float:left;
   }
 
+  @media screen and (max-width: 800px){
+    section[name="top"] > .left > .price{
+      display: none;
+    }
+
+  }
+
 
   section[name="top"] > .left > .price > .topper{
     font-size:24px;
     margin-top:0px;
     margin-bottom: 0px;
+  }
+  section[name="top"] > .left > .price > .topper > span{
+    display: none;
   }
 
   section[name="top"] > .left > .price > .price{
@@ -100,6 +157,26 @@
   section[name="top"] > .left > .price > .botter{
     font-size:24px;
     margin-top:-8px;
+  }
+
+  @media screen and (max-width: 1150px){
+    section[name="top"] > .left > .price{
+      width: 100%;
+    }
+    section[name="top"] > .left > .price > .price{
+      display: none;
+    }
+    section[name="top"] > .left > .price > .botter{
+      display: none;
+    }
+    section[name="top"] > .left > .price > .topper > span{
+      display: inline;
+    }
+
+    section[name="top"] > .left > .price > .topper {
+      font-size:18px;
+    }
+
   }
 
   section[name="top"] > .left > .purchase {
@@ -168,6 +245,16 @@
     box-sizing: border-box;
   }
 
+  @media screen and (max-width: 800px){
+      section[name="steps"] > .steps{
+        width: 95%;
+        margin-left:2.5%;
+        margin-right:2.5%;
+        display: inline-block;
+        height:auto;
+      }
+  }
+
   section[name="steps"] > .steps > .step {
     width: calc(100% / 3);
     float: left;
@@ -182,6 +269,14 @@
     font-style: italic;
     font-family: "brother-1816", "Brother 1816", Helvetica;
     color:white;
+  }
+
+  @media screen and (max-width: 800px){
+    section[name="steps"] > .steps > .step {
+      width: 100%;
+      display: inline-block;
+      min-height: 55vh;
+    }
   }
 
   section[name="steps"] > .steps > .step > h1{
@@ -207,6 +302,8 @@
     background-position: center;
   }
 
+
+
   section[name="yellow"] > h1{
     margin-top:36vh;
     font-size:36px;
@@ -224,6 +321,21 @@
       margin-top:0px;
       font-style: normal;
       font-weight: 400;
+    }
+
+    @media screen and (max-width: 800px){
+      section[name="yellow"] > h1{
+        background-color:white;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right:10px;
+      }
+      section[name="yellow"] > h2{
+        background-color:white;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right:10px;
+      }
     }
 
     section[name="yellow"] > .purchase{
@@ -291,15 +403,43 @@
       box-sizing: border-box;
     }
 
+    @media screen and (max-width: 800px){
+      section[name="how"] > .left{
+        width: 100%;
+      }
+
+      section[name="how"] > .right{
+        width: 100%;
+        height:70vh;
+      }
+
+      section[name="how"]{
+        height: 150vh;
+      }
+    }
+
     section[name="how"] > .right > img {
       height: 60px;
     }
+
+
     section[name="how"] > .right > h2 {
       height: 20px;
       margin-top:0px;
       margin-bottom:0px;
       font-weight: 400;
       display: inline-block;
+    }
+
+    @media screen and (max-width: 800px){
+      section[name="how"] > .right > img {
+        width: 100%;
+        height: auto;
+      }
+
+      section[name="how"] > .right > h2 {
+        font-size:16px;
+      }
     }
 
     section[name="how"] > .right > .keys {
@@ -349,6 +489,13 @@
       font-weight:400;
     }
 
+    @media screen and (max-width: 800px){
+      section[name="how"] > .right > .keys > .key > .caption{
+        font-size:9px;
+        padding-top:8px;
+      }
+    }
+
     section[name="how"] > .right > .keys > .key > .caption > span[key]{
       font-family: monospace;
       color:black;
@@ -362,12 +509,13 @@
 <body>
   <section name="top">
     <img src="./badge.png" id="badge">
+    <img src="./laptop_yellow.png" id="mobileImage">
     <div class="left">
       <img id="logo" src="./logo.png">
       <h1>
         Type math <i>anywhere</i> on
         the web with mathkeys.
-        <br>Works with <img src="./apple.png"> or <img src="./microsoft.png" style="margin-bottom:-28px;margin-left:-12px;">
+        <br>Works with <img src="./apple.png"> or <img src="./microsoft.png" class="microsoft">
       </h1>
       <h2>
         Use with Quizlet, Google Drive,
@@ -375,7 +523,7 @@
         Piazza, Twitter, and more!
       </h2>
       <div class="price">
-        <div class="topper">just</div>
+        <div class="topper">just <span>$8.95 + free shipping</span></div>
         <div class="price">$8.95</div>
         <div class="botter">+ free shipping</div>
       </div>
