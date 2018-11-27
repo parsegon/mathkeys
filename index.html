@@ -64,7 +64,7 @@
   }
 
   section[name="top"] > .left > h2{
-    font-size:22px;
+    font-size:17px;
     font-weight:200;
     color:white;
     line-height:26px;
@@ -92,7 +92,7 @@
   }
 
   section[name="top"] > .left > .price > .price{
-    font-size:54px;
+    font-size:48px;
     margin-top:-5px;
     margin-bottom:0px;
   }
@@ -172,7 +172,7 @@
     width: calc(100% / 3);
     float: left;
     height: calc(55vh - 40px);
-    background-size:40%;
+    background-size:50%;
     background-position: bottom;
     background-image:url('./1.png');
     padding:60px;
@@ -263,6 +263,100 @@
       cursor: pointer;
       font-size:11px;
     }
+
+    section[name="how"]{
+      width: 100%;
+      height: 80vh;
+      display: inline-block;
+      font-family: "brother-1816", "Brother 1816", Helvetica;
+    }
+
+
+    section[name="how"] > .left{
+      width: 40%;
+      height:80vh;
+      float:left;
+      background-color:#FFE781;
+      background-image:url('./5options.png');
+      background-size:cover;
+      background-position: center;
+    }
+
+    section[name="how"] > .right {
+      width: 60%;
+      height: 80vh;
+      float:left;
+      background-color:white;
+      padding:60px 40px;
+      box-sizing: border-box;
+    }
+
+    section[name="how"] > .right > img {
+      height: 60px;
+    }
+    section[name="how"] > .right > h2 {
+      height: 20px;
+      margin-top:0px;
+      margin-bottom:0px;
+      font-weight: 400;
+      display: inline-block;
+    }
+
+    section[name="how"] > .right > .keys {
+      display: inline-block;
+      width: 100%;
+      margin-top:40px;
+
+    }
+
+    section[name="how"] > .right > .keys > .key {
+      width: 100%;
+      display: inline-block;
+      margin-bottom:10px;
+    }
+
+    section[name="how"] > .right > .keys > .key > .color{
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      float:left;
+      background-color:#00B9E3;
+    }
+
+    section[name="how"] > .right > .keys > .key + .key > .color {
+      background-color:#FF8E6C;
+    }
+
+    section[name="how"] > .right > .keys > .key + .key + .key > .color{
+      background-color:#7AC943;
+    }
+
+    section[name="how"] > .right > .keys > .key + .key + .key + .key > .color{
+      background-color:#FF1D25
+    }
+
+    section[name="how"] > .right > .keys > .key + .key + .key + .key + .key > .color{
+      background-color:#FFE781;
+    }
+
+    section[name="how"] > .right > .keys > .key > .caption{
+      height:30px;
+      float:left;
+      margin-left:10px;
+      box-sizing: border-box;
+      padding-top: 4px;
+      font-size:14px;
+      font-weight:400;
+    }
+
+    section[name="how"] > .right > .keys > .key > .caption > span[key]{
+      font-family: monospace;
+      color:black;
+      background-color:#ddd;
+      padding:3px;
+      border-radius:3px;
+
+    }
   </style>
 </head>
 <body>
@@ -288,6 +382,36 @@
       <a class="purchase" href="https://shop.mathkeys.xyz">Purchase Mathkeys</a>
     </div>
   </section>
+  <section name="how">
+    <div class="left"></div>
+    <div class="right">
+      <img src="./5options1key.png">
+      <h2>Quick to learn, easy to use</h2>
+      <div class="keys">
+        <div class="key">
+          <div class="color"></div>
+          <div class="caption">Press <span key>Key</span> Normally for Bottom Left</div>
+        </div>
+        <div class="key">
+          <div class="color"></div>
+          <div class="caption">Press <span key>Key</span> + <span key>Alt</span> for Exponentiated Number</div>
+        </div>
+        <div class="key">
+          <div class="color"></div>
+          <div class="caption">Press <span key>Key</span> + <span key>Shift</span> for Top Left</div>
+        </div>
+        <div class="key">
+          <div class="color"></div>
+          <div class="caption">Press <span key>Key</span> + <span key>Shift</span> + <span key>Alt</span> for Bottom Left</div>
+        </div>
+        <div class="key">
+          <div class="color"></div>
+          <div class="caption">Press <span key>Key</span> + <span key>Shift</span> + <span key>Alt</span> + <span key>Control</span> for Top Left</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <section name="steps">
     <h1>How it works</h1>
     <h2>3 simple steps</h2>
@@ -298,11 +422,11 @@
       </div>
       <div class="step" style="background-image:url('./2.png')">
         <h1>2.</h1>
-        <h2>Download Chrome plug-in included in packaging.</h2>
+        <h2>Download keyboard layout included in packaging.</h2>
       </div>
       <div class="step" style="background-image:url('./3.png')">
         <h1>3.</h1>
-        <h2>Triple-tap on key to insert the math figure</h2>
+        <h2>Start typing math on any application.</h2>
       </div>
     </div>
   </section>

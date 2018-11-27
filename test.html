@@ -1,0 +1,40 @@
+<head>
+  <script>
+
+  const replaceOnDocument = (pattern, string, {target = document.body} = {}) => {
+    // Handle `string` — see the last section
+    [
+      target,
+      ...target.querySelectorAll("*:not(script):not(noscript):not(style)")
+    ].forEach(({childNodes: [...nodes]}) => nodes
+      .filter(({nodeType}) => nodeType === document.TEXT_NODE)
+      .forEach((textNode) => textNode.textContent = textNode.textContent.replace(pattern, string)));
+  };
+
+
+
+  window.count1s = 0;
+
+  document.addEventListener('keyup', function(event){
+    console.log(event);
+    if(event.key == "1"){
+      window.count1s++;
+    } else {
+      window.count1s = 0;
+    }
+
+    if(window.count1s == 3){
+      console.log('hi');
+      replaceOnDocument("111", "π");
+      window.count1s = 0;
+    }
+
+  } );
+  </script>
+</head>
+
+<body>
+  <textarea id="text"></textarea>
+  <textarea id="text"></textarea>
+
+</body>
