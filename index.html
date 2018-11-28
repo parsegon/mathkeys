@@ -16,17 +16,18 @@
     height: 100vh;
     display: inline-block;
     background-color: #FFE781;
-    background-image: url(./laptop_yellow.png);
-    background-position: 27vw;
-    background-size: contain;
+    background-image: url(./laptop_red.png);
+    background-position: top right;
+    background-size: 100%;
     background-repeat: no-repeat;
     font-family: "brother-1816", "Brother 1816", Helvetica;
   }
 
   section[name="top"] > #badge {
-    width: 300px;
-    bottom:40px;
-    right:40px;
+    width: 240px;
+    bottom:80px;
+    z-index: 10;
+    left:36%;
     position: absolute;
   }
 
@@ -42,7 +43,7 @@
     padding: 30px 30px;
     position: relative;
     box-sizing: border-box;
-    background-color:#FD6975;
+    background-color:transparent;
   }
 
   #mobileImage {
@@ -53,6 +54,9 @@
   @media screen and (max-width: 800px){
     section[name="top"]{
       height: auto;
+            background:none;
+      background-color: #FD6975;
+
     }
     section[name="top"] > .left{
       width: 100%;
@@ -533,11 +537,11 @@
 <body>
   <section name="top">
     <img src="./badge.png" id="badge">
-    <img src="./laptop_yellow.png" id="mobileImage">
+    <img src="./laptop_yellow_2.png" id="mobileImage">
     <div class="left">
       <img id="logo" src="./logo.png">
       <h1>
-        Type math <i>anywhere</i> with mathkeys*.
+        Type math quickly <i>anywhere</i> with mathkeys*.
 
       </h1>
       <h2>
@@ -635,7 +639,7 @@ section[name="cta"] > .cta:hover{
   </style>
   <section name="cta">
     <h1>Get Mathkeys Today</h1>
-    <p>Get gauranteed delivery by Christmas</p>
+    <p>Get guaranteed delivery by Christmas</p>
     <a class="cta">Order Mathkeys</a>
   </section>
   <footer>
