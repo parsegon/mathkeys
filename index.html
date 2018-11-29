@@ -386,12 +386,15 @@
       margin-left:40px;
     }
 
-    footer > div {
+    footer > div, a {
       float:right;
       margin-right: 40px;
       margin-top:52px;
       cursor: pointer;
       font-size:11px;
+      text-decoration: none;
+      color:black;
+      display: inline-block;
     }
 
     @media screen and (max-width: 800px){
@@ -667,8 +670,8 @@ section[name="cta"] > .cta:hover{
   </section>
   <footer>
     <img src="./black_logo.png">
-    <div class="returnpolicy">RETURN POLICY</div>
+    <a class="returnpolicy" href="./return.html">RETURN POLICY</a>
     <div class="returnpolicy">CONTACT: MATHKEYS@PARSEGON.COM</div>
-    <div class="returnpolicy">*Programs using fonts that don't support math aren't compatible. Majority of programs do support math, however.</div>
+    <div class="returnpolicy">*Rarely, a program may not support Unicode Based Math.</div>
   </footer>
 </body>
